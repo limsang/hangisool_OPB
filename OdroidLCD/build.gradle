@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29               // Lastest Stable
+    buildToolsVersion '28.0.3'         // Lastest Stable
+
+    defaultConfig {
+        applicationId "com.hangisool.lcd"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                outputFileName = new File("PLAYER"+".apk")
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '21.1.6352462'
+    externalNativeBuild {
+        cmake {
+            path file('CMakeLists.txt')
+        }
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    //디렉토리 전체를 지정
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api project(':ini4j-0.5.4')
+    api project(':commons-net-3.5')
+    api project(':jakarta-oro-2.0.8')
+    api project(':jsoup-1.9.2')
+    api 'com.github.katoro:typekit:1.0.1'
+    api 'log4j:log4j:1.2+'
+    api 'de.mindpipe.android:android-logging-log4j:1.0.3'
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'org.webrtc:google-webrtc:1.0.22672'
+    //CR 21770
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation('io.socket:socket.io-client:0.8.3') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.licheedev:android-serialport:2.1.2'
+}

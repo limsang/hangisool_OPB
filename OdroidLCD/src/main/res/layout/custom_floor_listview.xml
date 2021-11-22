@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/clv_back">
+
+        <TextView
+            android:id="@+id/clv_floorName"
+            android:text="B2"
+            android:textSize="30px"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="200px"
+            android:layout_height="75px" />
+
+        <TextView
+            android:id="@+id/clv_floorDetail"
+            android:text="지하주차장"
+            android:textSize="30px"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="75px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+</LinearLayout>

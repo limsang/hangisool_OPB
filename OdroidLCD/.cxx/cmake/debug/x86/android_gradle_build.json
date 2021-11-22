@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "C:/hwangjunghyun/29Inc 485Version_Complete/LCDApp_sungwon_kongjuUNIV_485_complete/OdroidLCD/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android19 --gcc-toolchain=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dserial_port_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "serial_port-Debug-x86": {
+      "buildCommand": "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\.cxx\\cmake\\debug\\x86\" serial_port",
+      "buildType": "debug",
+      "toolchain": "157342094",
+      "abi": "x86",
+      "artifactName": "serial_port",
+      "files": [
+        {
+          "src": "C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\src\\main\\cpp\\SerialPort.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\hwangjunghyun\\29Inc 485Version_Complete\\LCDApp_sungwon_kongjuUNIV_485_complete\\OdroidLCD\\build\\intermediates\\cmake\\debug\\obj\\x86\\libserial_port.so"
+    }
+  },
+  "toolchains": {
+    "157342094": {
+      "cCompilerExecutable": "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

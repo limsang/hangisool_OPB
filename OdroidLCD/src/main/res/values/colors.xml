@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="floorBackWhite">#1effffff</color>
+
+  <color name="air_good_top">#0277BD</color>
+  <color name="air_good_bottom">#0373E6</color>
+  <color name="air_soso_top">#0098A6</color>
+  <color name="air_soso_bottom">#00BCD5</color>
+  <color name="air_bad_top">#EF6C00</color>
+  <color name="air_bad_bottom">#FB8C00</color>
+  <color name="air_verybad_top">#C62827</color>
+  <color name="air_verybad_bottom">#C62827</color>
+</resources>

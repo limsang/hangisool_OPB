@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="540px"
+    android:background="#123C66"
+    android:backgroundTintMode="screen"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context="com.hangisool.lcd_a_h.LcdActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="1200px"
+                android:layout_height="450px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="600px"
+                        android:layout_height="450px">
+
+                        <ImageView
+                            android:layout_width="540px"
+                            android:layout_height="225px"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="220px"
+                            android:background="@drawable/jeunjulogo"></ImageView>
+
+                        <TextView
+                            android:id="@+id/todayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="40px"
+                            android:gravity="center"
+                            android:text="2018년 11월 11일 월"
+                            android:textColor="#fff"
+                            android:textSize="40px" />
+
+                        <TextView
+                            android:id="@+id/todayTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90px"
+                            android:gravity="center"
+                            android:text="12 : 13"
+                            android:textColor="#fff"
+                            android:textSize="110px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="600px"
+                        android:layout_height="450px">
+
+
+                        <ImageView
+                            android:id="@+id/imageArrow"
+                            android:layout_width="230px"
+                            android:layout_height="230px"
+                            android:layout_marginLeft="70px"
+                            android:layout_marginTop="100px"
+                            android:background="@drawable/sungwon_arrow_up_2" />
+
+                        <TextView
+                            android:id="@+id/txtFloor"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="225px"
+                            android:layout_marginTop="100px"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#fff"
+                            android:textSize="250px"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="1200px"
+                android:layout_height="90px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10000">
+
+                    <RelativeLayout
+                        android:layout_width="1200px"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/newsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="40px" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtLamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="720px"
+            android:layout_height="540px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mainView"
+                    android:layout_width="720px"
+                    android:layout_height="450px"
+                    android:background="#000"
+                    android:gravity="center"
+                    android:padding="0px">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="720px"
+                    android:layout_height="90px">
+                    <ImageView
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:background="@drawable/sungwon_logo" />
+
+                    <TextView
+                        android:layout_width="650px"
+                        android:layout_height="90px"
+                        android:gravity="center"
+                        android:layout_marginLeft="90px"
+                        android:text="고장접수 : 063-123-1234"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="40px" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="#a0000000"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="254dp"
+            android:background="@drawable/w_02"></ImageView>
+
+        <TextView
+            android:id="@+id/tmnText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="390dp"
+            android:text="-11.0℃"
+            android:textColor="#9dc3e6"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tmxText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="390dp"
+            android:text="-11.0℃"
+            android:textColor="#f8cbb2"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/celsiusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="290dp"
+            android:text="-11.0℃"
+            android:textSize="70dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:background="#3b000000"
+            android:orientation="vertical"
+            android:weightSum="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="8"
+                android:background="#5a000000"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/buttom_line_1">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="18"
+                android:background="#5a000000"
+                android:orientation="vertical"
+                android:weightSum="30">
+
+                <TextView
+                    android:id="@+id/todayWeatherText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/buttom_line_1"
+                    android:text="오늘의 날씨"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:weightSum="30">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/side_line_1"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/weatherText"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_weight="3"
+                            android:text="구름조금"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="4.3"
+                    android:background="@drawable/buttom_line_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tmnText1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="최저기온"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="4.3"
+                    android:background="@drawable/buttom_line_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tmxText1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="최고기온"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="4.3"
+                    android:background="@drawable/buttom_line_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/popText1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="강수확률"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/popText2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="4.3"
+                    android:background="@drawable/buttom_line_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/humidityText1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="습도"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/humidityText2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="80%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="6"
+                android:background="#5a000000"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/stockPriceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/buttom_line_1"
+                    android:text="증권정보"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="3.8"
+                    android:background="@drawable/buttom_line_2"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/kospiText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_weight="1.5"
+                        android:text="코스피"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/kospiPriceText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="2.5"
+                        android:gravity="right"
+                        android:text="2,085.52"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/kospiContrastText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="▲2.92"
+                        android:textColor="#FF5A5A"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentsView"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

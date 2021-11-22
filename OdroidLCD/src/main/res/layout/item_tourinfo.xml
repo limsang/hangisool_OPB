@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="520px"
+    android:layout_height="100px">
+    <ImageView
+        android:id="@+id/img_touritem"
+        android:layout_width="150px"
+        android:layout_height="100px" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_touritem_title"
+            android:paddingLeft="15px"
+            android:paddingBottom="5px"
+            android:layout_width="370px"
+            android:layout_height="50px"
+            android:text="TEST"
+            android:gravity="bottom"
+            android:textSize="20px"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/txt_touritem_detail"
+            android:paddingLeft="15px"
+            android:paddingTop="5px"
+            android:layout_width="370px"
+            android:layout_height="50px"
+            android:text="TEST"
+            android:gravity="top"
+            android:textSize="15px"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_kongjuUNIV_485_210604_Complete/OdroidLCD/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_kongjuUNIV_485_210604_Complete\\OdroidLCD\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"serial_port-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "serial_port",
+			"buildCommand" : "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_kongjuUNIV_485_210604_Complete\\OdroidLCD\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target serial_port",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi19 --gcc-toolchain=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dserial_port_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_kongjuUNIV_485_210604_Complete/OdroidLCD/src/main/cpp/SerialPort.c",
+					"workingDirectory" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_kongjuUNIV_485_210604_Complete/OdroidLCD/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_kongjuUNIV_485_210604_Complete/OdroidLCD/build/intermediates/cmake/release/obj/armeabi-v7a/libserial_port.so",
+			"toolchain" : "2955384905"
+		}
+	},
+	"toolchains" : 
+	{
+		"2955384905" : 
+		{
+			"cCompilerExecutable" : "C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

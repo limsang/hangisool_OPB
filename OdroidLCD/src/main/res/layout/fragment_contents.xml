@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="540px"
+    android:layout_height="675px"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="540px"
+      android:layout_height="675px"
+      android:background="#66000000">
+
+    <RelativeLayout
+        android:layout_width="270px"
+        android:layout_height="200px"
+        android:layout_marginTop="10px">
+
+      <TextView
+          android:layout_width="270px"
+          android:layout_height="40px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="10px"
+          android:text="날씨"
+          android:textColor="#fff"
+          android:textSize="25px" />
+
+      <ImageView
+          android:id="@+id/weatherImage"
+          android:layout_width="110px"
+          android:layout_height="110px"
+          android:layout_marginLeft="30px"
+          android:layout_marginTop="50px"
+          android:background="@drawable/w_02"></ImageView>
+
+      <TextView
+          android:id="@+id/weatherText"
+          android:layout_width="110px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="150px"
+          android:gravity="center"
+          android:text="구름조금"
+          android:textColor="#FFFFFF"
+          android:textSize="15px" />
+
+      <TextView
+          android:id="@+id/celsiusText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="150px"
+          android:layout_marginTop="60px"
+          android:text="20.0℃"
+          android:textColor="#fff"
+          android:textSize="30px" />
+
+      <TextView
+          android:layout_width="50px"
+          android:layout_height="20px"
+          android:layout_marginLeft="150px"
+          android:layout_marginTop="121px"
+          android:text="최고"
+          android:textColor="#fff" />
+
+      <TextView
+          android:id="@+id/tmxText2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="200px"
+          android:layout_marginTop="120px"
+          android:text="25.0℃"
+          android:textColor="#f8cbb2"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="50px"
+          android:layout_height="20px"
+          android:layout_marginLeft="150px"
+          android:layout_marginTop="151px"
+          android:text="최저"
+          android:textColor="#fff" />
+
+      <TextView
+          android:id="@+id/tmnText2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="200px"
+          android:layout_marginTop="150px"
+          android:text="-11.0℃"
+          android:textColor="#9dc3e6"
+          android:textSize="20px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="700px"
+        android:layout_height="200px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="300px">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="10px"
+          android:text="영화 예매 순위"
+          android:textColor="#fff"
+          android:textSize="25px" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="50px"
+          android:text="1위"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="400px"
+          android:layout_height="30px"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="50px"
+          android:text="완벽한 타인"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="80px"
+          android:text="2위"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="400px"
+          android:layout_height="30px"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="80px"
+          android:text="해리포터"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="110px"
+          android:text="3위"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="240px"
+          android:layout_height="30px"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="110px"
+          android:text="동네사람들"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="140px"
+          android:text="4위"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="400px"
+          android:layout_height="30px"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="140px"
+          android:text="창궐"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="0px"
+          android:layout_marginTop="170px"
+          android:text="5위"
+          android:textColor="#fff"
+          android:textSize="20px" />
+
+      <TextView
+          android:layout_width="400px"
+          android:layout_height="30px"
+          android:layout_marginLeft="40px"
+          android:layout_marginTop="170px"
+          android:text="영화를 보다"
+          android:textColor="#fff"
+          android:textSize="20px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="540px"
+        android:layout_height="500px"
+        android:layout_marginTop="220px">
+      <TextView
+          android:layout_width="270px"
+          android:layout_height="40px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="10px"
+          android:text="뉴스"
+          android:textColor="#fff"
+          android:textSize="25px" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="50px"
+          android:text="- 서울 아파트값 상승 멈췄다…1년2개월 만에 보합 전환"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true"/>
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="80px"
+          android:text="- 트럼프 선거 후 대북일성 '서두를 것 없다'…북미대화 시기 촉각"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="110px"
+          android:text="-'미세먼지 차량2부제' 민간부문 확대…경유차 인센티브 폐지"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="140px"
+          android:text="- 당정, 쌀목표가격 19만6천원으로…직불제 통합 모든 작물 적용"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="170px"
+          android:text="- 제주사망여아' 엄마 부검의 외상없고 익사자정황"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="200px"
+          android:text="-美증시 강세에 코스피 상승…나흘 만에 2,090대 마감"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="230px"
+          android:text="- 여야 '기무사 계엄문건' 국방위 청문회 실시키로"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="260px"
+          android:text="- KDI, 경기둔화 공식화…내수부진으로 전반적 경기 다소 둔화"
+          android:textColor="#fff"
+          android:textSize="20px" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="290px"
+          android:text="- 美하원 민주 223·공화 196… 상원 공화 51·민주 46…막판 개표"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true"/>
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="320px"
+          android:text="-한국당 비대위, 전원책에 최후통첩…갈등 분수령 "
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="350px"
+          android:text="-종합소득세 중간납부 30일까지…자영업자 등 139만명 대상 "
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="380px"
+          android:text="-수능 부정행위 작년 서울서만 100여건…'전자기기 소지' 최다"
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+      <TextView
+          android:layout_width="800px"
+          android:layout_height="30px"
+          android:layout_marginLeft="20px"
+          android:layout_marginTop="410px"
+          android:text="-자율주행차 규제혁파 로드맵 발표…'시스템'도 운전자다 "
+          android:textColor="#fff"
+          android:textSize="20px"
+          android:singleLine="true" />
+    </RelativeLayout>
+  </RelativeLayout>
+</LinearLayout>

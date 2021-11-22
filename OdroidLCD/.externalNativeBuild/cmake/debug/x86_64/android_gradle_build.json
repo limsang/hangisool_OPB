@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\.externalNativeBuild\\cmake\\debug\\x86_64 --target clean"
+	],
+	"libraries" : 
+	{
+		"serial_port-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "serial_port",
+			"buildCommand" : "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\.externalNativeBuild\\cmake\\debug\\x86_64 --target serial_port",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dserial_port_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/src/main/cpp/SerialPort.c",
+					"workingDirectory" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/.externalNativeBuild/cmake/debug/x86_64"
+				}
+			],
+			"output" : "D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/build/intermediates/cmake/debug/obj/x86_64/libserial_port.so",
+			"toolchain" : "2955384905"
+		}
+	},
+	"toolchains" : 
+	{
+		"2955384905" : 
+		{
+			"cCompilerExecutable" : "C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/JH/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

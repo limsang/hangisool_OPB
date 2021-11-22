@@ -1,0 +1,2 @@
+include ':OdroidLCD', ':jsoup-1.9.2', ':commons-net-3.5', ':jakarta-oro-2.0.8', ':ini4j-0.5.4' , ':libwebrtc'
+

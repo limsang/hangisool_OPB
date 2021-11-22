@@ -1,0 +1,3 @@
+C:/hwangjunghyun/29Inc 485Version_Complete/LCDApp_sungwon_kongjuUNIV_485_complete/OdroidLCD/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+C:/hwangjunghyun/29Inc 485Version_Complete/LCDApp_sungwon_kongjuUNIV_485_complete/OdroidLCD/.cxx/cmake/debug/x86/CMakeFiles/serial_port.dir
+C:/hwangjunghyun/29Inc 485Version_Complete/LCDApp_sungwon_kongjuUNIV_485_complete/OdroidLCD/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1080px"
+    android:layout_height="1920px"
+    android:layout_gravity="right"
+    android:backgroundTintMode="screen"
+    android:baselineAligned="false"
+    android:gravity="right"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="526px"
+            android:layout_height="1920px"
+            android:layout_marginLeft="554px"
+            android:background="@drawable/background_universe" />
+
+        <RelativeLayout
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="526px"
+                android:layout_height="1920px"
+                android:layout_gravity="right"
+                android:background="#38000000"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="526px"
+                    android:layout_height="250px">
+
+                    <ImageView
+                        android:id="@+id/imageArrow"
+                        android:layout_width="170px"
+                        android:layout_height="200px"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginTop="20px" />
+
+                    <TextView
+                        android:id="@+id/txtFloor"
+                        android:layout_width="300px"
+                        android:layout_height="250px"
+                        android:layout_marginLeft="220px"
+                        android:gravity="center"
+                        android:text="B5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="180px" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="526px"
+                    android:layout_height="50px"
+                    android:background="#66000000">
+
+                    <TextView
+                        android:id="@+id/newsText"
+                        android:layout_width="526px"
+                        android:layout_height="50px"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/txtLamp"
+                        android:layout_width="526px"
+                        android:layout_height="50px"
+                        android:background="#ff0000"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="25px"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="526px"
+                    android:layout_height="50px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/todayText"
+                        android:layout_width="320px"
+                        android:layout_height="50px"
+                        android:background="#19000000"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20px"
+                        android:text="2018년 11월 26일"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/todayTimeText"
+                        android:layout_width="220px"
+                        android:layout_height="50px"
+                        android:background="#19000000"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="20px"
+                        android:text="PM 03:13"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="526px"
+                    android:layout_height="1165px">
+
+                    <LinearLayout
+                        android:layout_width="526px"
+                        android:layout_height="1165px"
+                        android:background="#66000000"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/floor_15"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="10F   사무공간"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_14"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="9F   사무공간"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_13"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="8F   CGV 5관"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_12"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="7F   CGV 3관,4관"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_11"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="6F   CGV 1관,2관"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_10"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="5F   CGV 매표소"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_9"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="4F   아동,스포츠"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_8"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="3F   여성패션"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_7"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="2F  남성패션"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_6"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="1F  식품관, 행사장"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_5"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="B1  지하주차장, 서점"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_4"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="B2  지하주차장, 관리사무실"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_3"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="B3  지하주차장"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_2"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="B4  지하주차장"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/floor_1"
+                            android:layout_width="526px"
+                            android:layout_height="75px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30px"
+                            android:text="B5  지하주차장"
+                            android:textSize="30px" />
+
+                        <RelativeLayout
+                            android:layout_width="526px"
+                            android:layout_height="40px"
+                            android:background="#000"></RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mainView"
+                    android:layout_width="526px"
+                    android:layout_height="405px"
+                    android:background="#68ffffff"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="526px"
+                    android:layout_height="24px"
+                    android:background="#000"></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="526px"
+                    android:layout_height="63px">
+
+                    <TextView
+                        android:id="@+id/btn_back"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#7b7f7f7f"
+                        android:gravity="center"
+                        android:text="BACK"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/btn_menu"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#667f7f7f"
+                        android:gravity="center"
+                        android:text="컨텐츠"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/btn_next"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#7b7f7f7f"
+                        android:gravity="center"
+                        android:text="NEXT"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--안씀시작-->
+    <RelativeLayout
+        android:id="@+id/contentsView"
+        android:layout_width="0px"
+        android:layout_height="0px"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/todayWeatherText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/buttom_line_1"
+        android:text="오늘의 날씨"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/tmnText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="최저기온"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="4.3"
+        android:background="@drawable/buttom_line_2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tmxText1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="최고기온"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/popText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="강수확률"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/popText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0%"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/humidityText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="습도"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/humidityText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="80%"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/stockPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1.7"
+        android:background="@drawable/buttom_line_1"
+        android:text="증권정보"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/kospiText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1.5"
+        android:text="코스피"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/kospiPriceText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="2.5"
+        android:gravity="right"
+        android:text="2,085.52"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/kospiContrastText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:text="▲2.92"
+        android:textColor="#FF5A5A"
+        android:textSize="14dp" />
+
+
+</LinearLayout>
+

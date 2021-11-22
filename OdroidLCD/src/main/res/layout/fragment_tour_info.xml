@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="526px"
+    android:layout_height="474px"
+    android:weightSum="6"
+    android:background="#66000000">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="474px"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tourinfo"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="9">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/btn_spot"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20px"
+                android:gravity="center"
+                android:background="@drawable/style_tour_btn_off"
+                android:text="관광지"/>
+            <TextView
+                android:id="@+id/btn_facil"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20px"
+                android:gravity="center"
+                android:background="@drawable/style_tour_btn_off"
+                android:text="문화시설"/>
+            <TextView
+                android:id="@+id/btn_festi"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20px"
+                android:gravity="center"
+                android:background="@drawable/style_tour_btn_off"
+                android:text="축제행사"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="474px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/btn_kor"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="한국어"
+            android:textSize="20px"
+            android:background="@drawable/style_tour_btn_off"/>
+        <TextView
+            android:id="@+id/btn_eng"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:gravity="center"
+            android:text="English"
+            android:background="@drawable/style_tour_btn_off"/>
+        <TextView
+            android:id="@+id/btn_chn"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:gravity="center"
+            android:text="漢語"
+            android:background="@drawable/style_tour_btn_off"/>
+        <TextView
+            android:id="@+id/btn_jpn"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:textSize="20px"
+            android:gravity="center"
+            android:text="日本語"
+            android:background="@drawable/style_tour_btn_off"/>
+    </LinearLayout>
+</LinearLayout>

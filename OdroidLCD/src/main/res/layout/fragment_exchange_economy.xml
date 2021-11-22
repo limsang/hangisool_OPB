@@ -1,0 +1,337 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ExchangeFragment">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:weightSum="18"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal"
+				>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="KOSPI"
+						android:textColor="#fff"
+						android:textSize="26dp"
+						android:gravity="center|left"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1150.79"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/fragmentKospi" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1150.79"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/fragmentKospiArrow" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="KOSDAQ"
+						android:textSize="26dp"
+						android:textColor="#fff"
+						android:gravity="center|left"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1150.79"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/fragmentKosdaq" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1150.79"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/fragmentKosdaqArrow" />
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/usa"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1150.79"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/usaBuyText" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1160.21"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/usaSellText" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/japan"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1025.52"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/japanBuyText" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="990.26"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/japanSellText" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/euro"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1223.75"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/eurBuyText" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1176.01"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/eurSellText" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:weightSum="8"
+				android:orientation="horizontal"
+				>
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2"
+					>
+
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/china"
+						/>
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="173.31"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/chinaBuyText" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="3">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="156.81"
+						android:textSize="25dp"
+						android:gravity="center"
+						android:textColor="#FFFFFF"
+						android:id="@+id/chinaSellText" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>

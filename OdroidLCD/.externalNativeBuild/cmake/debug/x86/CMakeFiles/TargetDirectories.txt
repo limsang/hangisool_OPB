@@ -1,0 +1,3 @@
+D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/.externalNativeBuild/cmake/debug/x86/CMakeFiles/serial_port.dir
+D:/hwangjunghyun/Odroid_LCD/OdroidLCDApp/trunk/LCDApp_sungwon_TouchBarLCD29/OdroidLCD/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir

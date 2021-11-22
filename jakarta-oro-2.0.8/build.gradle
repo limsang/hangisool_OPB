@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('jakarta-oro-2.0.8.jar'))

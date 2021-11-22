@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\.externalNativeBuild\\cmake\\debug\\x86 --target clean"
+  ],
+  "libraries": {
+    "serial_port-Debug-x86": {
+      "artifactName": "serial_port",
+      "buildCommand": "C:\\Users\\JH\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\.externalNativeBuild\\cmake\\debug\\x86 --target serial_port",
+      "abi": "x86",
+      "output": "D:\\hwangjunghyun\\Odroid_LCD\\OdroidLCDApp\\trunk\\LCDApp_sungwon_TouchBarLCD29\\OdroidLCD\\build\\intermediates\\cmake\\debug\\obj\\x86\\libserial_port.so"
+    }
+  }
+}

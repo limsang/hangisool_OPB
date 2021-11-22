@@ -1,0 +1,53 @@
+<RelativeLayout android:id="@+id/video_view_group"
+    android:layout_width="540px"
+    android:layout_height="1920px"
+    android:layout_gravity="right"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/txt_emerinfo"
+        android:background="@drawable/lcd_background2"
+        android:layout_width="540px"
+        android:layout_height="640px"
+        android:gravity="center"
+        android:textSize="40px"
+        android:textColor="#ffffff"
+        android:text="비상영상통화중입니다"/>
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="540px"
+        android:layout_height="200px"
+        android:background="#ff0000"
+        android:text="통화종료"
+        android:textSize="60px"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="640px"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="840px"
+        android:layout_width="540px"
+        android:layout_height="540px">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/remote_gl_surface_view"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        android:layout_marginTop="1380px">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/local_gl_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="90"/>
+    </FrameLayout>
+
+</RelativeLayout>
+

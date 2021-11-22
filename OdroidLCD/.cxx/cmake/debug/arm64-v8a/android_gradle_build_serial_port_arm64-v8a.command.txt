@@ -1,0 +1,7 @@
+Executable : C:\Users\JH\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\hwangjunghyun\29Inc 485Version_Complete\LCDApp_sungwon_kongjuUNIV_485_complete\OdroidLCD\.cxx\cmake\debug\arm64-v8a
+serial_port
+jvmArgs : 
+

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1080px"
+    android:layout_height="1920px"
+    android:layout_gravity="right"
+    android:backgroundTintMode="screen"
+    android:baselineAligned="false"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="526px"
+            android:layout_height="1920px"
+            android:layout_marginLeft="556px"
+            android:background="@drawable/background_universe" />
+
+        <RelativeLayout
+            android:layout_width="1080px"
+            android:layout_height="1920px"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="526px"
+                android:layout_height="1920px"
+                android:layout_gravity="right"
+                android:background="#38000000"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="526px"
+                    android:layout_height="250px">
+
+                    <ImageView
+                        android:id="@+id/imageArrow"
+                        android:layout_width="170px"
+                        android:layout_height="200px"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginTop="20px" />
+
+                    <TextView
+                        android:id="@+id/txtFloor"
+                        android:layout_width="300px"
+                        android:layout_height="250px"
+                        android:layout_marginLeft="220px"
+                        android:gravity="center"
+                        android:text="B5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="180px" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="526px"
+                    android:layout_height="50px"
+                    android:background="#66000000">
+
+                    <TextView
+                        android:id="@+id/newsText"
+                        android:layout_width="526px"
+                        android:layout_height="50px"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/txtLamp"
+                        android:layout_width="526px"
+                        android:layout_height="50px"
+                        android:background="#ff0000"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="25px"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="526px"
+                    android:layout_height="50px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/todayText"
+                        android:layout_width="320px"
+                        android:layout_height="50px"
+                        android:background="#19000000"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20px"
+                        android:text="2018년 11월 26일"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/todayTimeText"
+                        android:layout_width="220px"
+                        android:layout_height="50px"
+                        android:background="#19000000"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="20px"
+                        android:text="PM 03:13"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/info_view"
+                    android:layout_width="526px"
+                    android:layout_height="260dp"></RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="526px"
+                    android:layout_height="63px">
+
+                    <TextView
+                        android:id="@+id/btn_back_hop"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#7b7f7f7f"
+                        android:gravity="center"
+                        android:text="BACK"
+                        android:textColor="#fff"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/btn_menu_hop"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#667f7f7f"
+                        android:gravity="center"
+                        android:text="CONTENTS"
+                        android:textColor="#fff"
+                        android:textSize="25px" />
+
+                    <TextView
+                        android:id="@+id/btn_next_hop"
+                        android:layout_width="180px"
+                        android:layout_height="63px"
+                        android:background="#7b7f7f7f"
+                        android:gravity="center"
+                        android:text="NEXT"
+                        android:textColor="#fff"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="526px"
+                    android:layout_height="403px">
+
+                    <!--START 버튼 누르기전 대기화면 이미지-->
+                    <RelativeLayout
+                        android:layout_width="150px"
+                        android:layout_height="403px"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_wait_touch"
+                            android:layout_width="130px"
+                            android:layout_height="100px"
+                            android:background="@drawable/touch_image"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                    <!--END 버튼 누르기전 대기화면 이미지-->
+                    <!--START 누른 버튼 층 표시-->
+                    <TextView
+                        android:id="@+id/txt_pushed_floor"
+                        android:layout_width="150px"
+                        android:layout_height="403px"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="110px"
+                        android:visibility="invisible" />
+                    <!--END 누른 버튼 층 표시-->
+                    <!--START 결과값으로 받은 층과 호기명 표시하는 그룹-->
+                    <RelativeLayout
+                        android:id="@+id/group_result"
+                        android:layout_width="150px"
+                        android:layout_height="403px"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:id="@+id/txt_assigned_car"
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_marginTop="0px"
+                            android:gravity="center"
+                            android:text="A"
+                            android:textColor="#fff"
+                            android:textSize="100px" />
+
+                        <RelativeLayout
+                            android:layout_width="150px"
+                            android:layout_height="103px"
+                            android:layout_marginTop="150px"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/arrows_up" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/txt_assigned_floor"
+                            android:layout_width="150px"
+                            android:layout_height="150px"
+                            android:layout_marginTop="253px"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="100px" />
+                    </RelativeLayout>
+                    <!--END 결과값으로 받은 층과 호기명 표시하는 그룹-->
+                    <!--START 버튼 레이아웃-->
+                    <RelativeLayout
+                        android:layout_width="390px"
+                        android:layout_height="403px"
+                        android:layout_gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="390px"
+                            android:layout_height="400px"
+                            android:layout_margin="5px"
+                            android:orientation="vertical">
+                            <!--START 첫번째줄-->
+                            <LinearLayout
+                                android:layout_width="390px"
+                                android:layout_height="100px"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey00"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="1"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey01"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="2"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey02"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="3"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--END 첫번째줄-->
+                            <!--START 두번째줄-->
+                            <LinearLayout
+                                android:layout_width="390px"
+                                android:layout_height="100px"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey03"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="4"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey04"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="5"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey05"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="6"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--END 두번째줄-->
+                            <!--START 세번째줄-->
+                            <LinearLayout
+                                android:layout_width="390px"
+                                android:layout_height="100px"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey06"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="7"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey07"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="8"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey08"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="9"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--END 세번째줄-->
+                            <!--START 네번째줄-->
+                            <LinearLayout
+                                android:layout_width="390px"
+                                android:layout_height="100px"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey09"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="B"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b1808080"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="#fff"
+                                        android:textSize="65px" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="130px"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/btn_tenkey11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="5px"
+                                        android:background="#b18e8e8e"
+                                        android:gravity="center"
+                                        android:text="ENTER"
+                                        android:textColor="#fff"
+                                        android:textSize="30px" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <!--END 네번째줄-->
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--END 버튼 레이아웃-->
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mainView"
+                    android:layout_width="526px"
+                    android:layout_height="405px"
+                    android:background="#68ffffff"></RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="526px"
+                    android:layout_height="24px"
+                    android:background="#000"></RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--안씀시작-->
+    <RelativeLayout
+        android:id="@+id/contentsView"
+        android:layout_width="526px"
+        android:layout_height="675px"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/todayWeatherText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/buttom_line_1"
+        android:text="오늘의 날씨"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/tmnText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="최저기온"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="4.3"
+        android:background="@drawable/buttom_line_2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tmxText1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="최고기온"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/popText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="강수확률"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/popText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0%"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/humidityText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="습도"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/humidityText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="80%"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/stockPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1.7"
+        android:background="@drawable/buttom_line_1"
+        android:text="증권정보"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/kospiText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1.5"
+        android:text="코스피"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/kospiPriceText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="2.5"
+        android:gravity="right"
+        android:text="2,085.52"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/kospiContrastText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:text="▲2.92"
+        android:textColor="#FF5A5A"
+        android:textSize="14dp" />
+
+
+</LinearLayout>
+

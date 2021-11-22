@@ -1,0 +1,224 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.hangisool.lcd_a_h.movie_rank">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:weightSum="23"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="5.5">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="영화예매순위"
+					android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp"
+					android:layout_marginTop="12dp"
+					android:background="@drawable/buttom_line_1"
+					android:id="@+id/movieText"
+					android:textSize="15dp"
+					android:textColor="#FFFFFF"/>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3.5"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="15dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="6">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="1. 23아이덴티티"
+						android:textSize="14dp"
+						android:id="@+id/movieRankText1"
+						android:textColor="#FFFFFF"
+						android:layout_marginLeft="10dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/moviePerCentText1"
+						android:textSize="13dp"
+						android:textColor="#FFFFFF"
+						android:gravity="right" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3.5"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="15dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="6">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="2.재심"
+						android:id="@+id/movieRankText2"
+						android:textSize="14dp"
+						android:textColor="#FFFFFF"
+						android:layout_marginLeft="10dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/moviePerCentText2"
+						android:textSize="13dp"
+						android:textColor="#FFFFFF"
+						android:gravity="right" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3.5"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="15dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="6">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="3. 조작된 도시"
+						android:id="@+id/movieRankText3"
+						android:textSize="14dp"
+						android:textColor="#FFFFFF"
+						android:layout_marginLeft="10dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/moviePerCentText3"
+						android:textSize="13dp"
+						android:textColor="#FFFFFF"
+						android:gravity="right" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3.5"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="15dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="6">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="4. 트롤"
+						android:id="@+id/movieRankText4"
+						android:textSize="14dp"
+						android:textColor="#FFFFFF"
+						android:layout_marginLeft="10dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/moviePerCentText4"
+						android:textSize="13dp"
+						android:textColor="#FFFFFF"
+						android:gravity="right" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="3.5"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="15dp"
+				android:weightSum="8"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="6">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="5. 싱글라이더"
+						android:id="@+id/movieRankText5"
+						android:textSize="14dp"
+						android:textColor="#FFFFFF"
+						android:layout_marginLeft="10dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:id="@+id/moviePerCentText5"
+						android:textSize="13dp"
+						android:textColor="#FFFFFF"
+						android:gravity="right" />
+				</LinearLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>
